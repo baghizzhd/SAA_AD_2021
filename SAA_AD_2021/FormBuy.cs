@@ -16,10 +16,6 @@ namespace SAA_AD_2021
         {
             InitializeComponent();
         }
-        string a = "";
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
+      
     }
 }
