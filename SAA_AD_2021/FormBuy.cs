@@ -15,7 +15,6 @@ namespace SAA_AD_2021
         public FormBuy()
         {
             InitializeComponent();
-        }
-        string a =;
+      
     }
 }
