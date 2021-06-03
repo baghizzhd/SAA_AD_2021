@@ -36,7 +36,6 @@ namespace SAA_AD_2021
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.DTPstartdate = new System.Windows.Forms.DateTimePicker();
-            this.cboxcategory = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.tboxtime = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -50,6 +49,9 @@ namespace SAA_AD_2021
             this.btnsubmit = new System.Windows.Forms.Button();
             this.btnback = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // tboxnumber
@@ -108,14 +110,6 @@ namespace SAA_AD_2021
             this.DTPstartdate.Name = "DTPstartdate";
             this.DTPstartdate.Size = new System.Drawing.Size(217, 26);
             this.DTPstartdate.TabIndex = 13;
-            // 
-            // cboxcategory
-            // 
-            this.cboxcategory.FormattingEnabled = true;
-            this.cboxcategory.Location = new System.Drawing.Point(33, 312);
-            this.cboxcategory.Name = "cboxcategory";
-            this.cboxcategory.Size = new System.Drawing.Size(217, 28);
-            this.cboxcategory.TabIndex = 14;
             // 
             // label4
             // 
@@ -230,11 +224,43 @@ namespace SAA_AD_2021
             this.label9.TabIndex = 27;
             this.label9.Text = "Booking Now";
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(29, 317);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(60, 20);
+            this.label10.TabIndex = 28;
+            this.label10.Text = "label10";
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(647, 227);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(113, 24);
+            this.checkBox1.TabIndex = 29;
+            this.checkBox1.Text = "checkBox1";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // checkBox2
+            // 
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Location = new System.Drawing.Point(305, 163);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(113, 24);
+            this.checkBox2.TabIndex = 30;
+            this.checkBox2.Text = "checkBox2";
+            this.checkBox2.UseVisualStyleBackColor = true;
+            // 
             // FormBooking
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(928, 580);
+            this.Controls.Add(this.checkBox2);
+            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.btnback);
             this.Controls.Add(this.btnsubmit);
@@ -248,7 +274,6 @@ namespace SAA_AD_2021
             this.Controls.Add(this.label5);
             this.Controls.Add(this.tboxtime);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.cboxcategory);
             this.Controls.Add(this.DTPstartdate);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label3);
@@ -273,7 +298,6 @@ namespace SAA_AD_2021
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DateTimePicker DTPstartdate;
-        private System.Windows.Forms.ComboBox cboxcategory;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox tboxtime;
         private System.Windows.Forms.Label label5;
@@ -287,5 +311,8 @@ namespace SAA_AD_2021
         private System.Windows.Forms.Button btnsubmit;
         private System.Windows.Forms.Button btnback;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox checkBox2;
     }
 }
