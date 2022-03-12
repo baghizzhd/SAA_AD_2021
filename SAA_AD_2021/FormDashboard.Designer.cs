@@ -32,15 +32,20 @@ namespace SAA_AD_2021
             this.btnBooking = new System.Windows.Forms.Button();
             this.btnstorage = new System.Windows.Forms.Button();
             this.btnContactus = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.btnpurchase = new System.Windows.Forms.Button();
+            this.pboxprofile = new System.Windows.Forms.PictureBox();
+            this.Btnlogout = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.pboxprofile)).BeginInit();
             this.SuspendLayout();
             // 
             // btnBooking
             // 
-            this.btnBooking.Location = new System.Drawing.Point(254, 146);
+            this.btnBooking.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBooking.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBooking.Font = new System.Drawing.Font("Adobe Gothic Std B", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.btnBooking.Location = new System.Drawing.Point(319, 210);
             this.btnBooking.Name = "btnBooking";
-            this.btnBooking.Size = new System.Drawing.Size(276, 61);
+            this.btnBooking.Size = new System.Drawing.Size(293, 54);
             this.btnBooking.TabIndex = 0;
             this.btnBooking.Text = "Booking Now";
             this.btnBooking.UseVisualStyleBackColor = true;
@@ -48,59 +53,87 @@ namespace SAA_AD_2021
             // 
             // btnstorage
             // 
-            this.btnstorage.Location = new System.Drawing.Point(254, 225);
+            this.btnstorage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnstorage.Font = new System.Drawing.Font("Adobe Gothic Std B", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnstorage.Location = new System.Drawing.Point(319, 286);
             this.btnstorage.Name = "btnstorage";
-            this.btnstorage.Size = new System.Drawing.Size(276, 61);
+            this.btnstorage.Size = new System.Drawing.Size(293, 54);
             this.btnstorage.TabIndex = 1;
-            this.btnstorage.Text = "Store Unit & Price";
+            this.btnstorage.Text = "Store Unit and  Price";
             this.btnstorage.UseVisualStyleBackColor = true;
             this.btnstorage.Click += new System.EventHandler(this.btnstorage_Click);
             // 
             // btnContactus
             // 
-            this.btnContactus.Location = new System.Drawing.Point(254, 304);
+            this.btnContactus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnContactus.Font = new System.Drawing.Font("Adobe Gothic Std B", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnContactus.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.btnContactus.Location = new System.Drawing.Point(319, 446);
             this.btnContactus.Name = "btnContactus";
-            this.btnContactus.Size = new System.Drawing.Size(276, 61);
+            this.btnContactus.Size = new System.Drawing.Size(293, 54);
             this.btnContactus.TabIndex = 2;
             this.btnContactus.Text = "Contact Us";
             this.btnContactus.UseVisualStyleBackColor = true;
             this.btnContactus.Click += new System.EventHandler(this.btnContactus_Click);
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(106, 49);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(587, 46);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Welcome To Rental Warehouse";
-            // 
             // btnpurchase
             // 
-            this.btnpurchase.Location = new System.Drawing.Point(254, 389);
+            this.btnpurchase.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnpurchase.Font = new System.Drawing.Font("Adobe Gothic Std B", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnpurchase.Location = new System.Drawing.Point(319, 369);
             this.btnpurchase.Name = "btnpurchase";
-            this.btnpurchase.Size = new System.Drawing.Size(276, 61);
+            this.btnpurchase.Size = new System.Drawing.Size(293, 54);
             this.btnpurchase.TabIndex = 4;
             this.btnpurchase.Text = "Purchase History";
             this.btnpurchase.UseVisualStyleBackColor = true;
             this.btnpurchase.Click += new System.EventHandler(this.btnpurchase_Click);
             // 
+            // pboxprofile
+            // 
+            this.pboxprofile.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pboxprofile.Image = global::SAA_AD_2021.Properties.Resources.depositphotos_39258143_stock_illustration_businessman_avatar_profile_picture;
+            this.pboxprofile.Location = new System.Drawing.Point(50, 24);
+            this.pboxprofile.Name = "pboxprofile";
+            this.pboxprofile.Size = new System.Drawing.Size(59, 50);
+            this.pboxprofile.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pboxprofile.TabIndex = 16;
+            this.pboxprofile.TabStop = false;
+            this.pboxprofile.Click += new System.EventHandler(this.pboxprofile_Click);
+            // 
+            // Btnlogout
+            // 
+            this.Btnlogout.BackColor = System.Drawing.Color.Red;
+            this.Btnlogout.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Btnlogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btnlogout.ForeColor = System.Drawing.Color.Snow;
+            this.Btnlogout.Location = new System.Drawing.Point(762, 24);
+            this.Btnlogout.Name = "Btnlogout";
+            this.Btnlogout.Size = new System.Drawing.Size(122, 35);
+            this.Btnlogout.TabIndex = 17;
+            this.Btnlogout.Text = "Logout";
+            this.Btnlogout.UseVisualStyleBackColor = false;
+            this.Btnlogout.Click += new System.EventHandler(this.Btnlogout_Click);
+            // 
             // FormDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::SAA_AD_2021.Properties.Resources._2;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(928, 580);
+            this.Controls.Add(this.Btnlogout);
+            this.Controls.Add(this.pboxprofile);
             this.Controls.Add(this.btnpurchase);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnContactus);
             this.Controls.Add(this.btnstorage);
             this.Controls.Add(this.btnBooking);
+            this.DoubleBuffered = true;
             this.Name = "FormDashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormDashboard";
+            this.Load += new System.EventHandler(this.FormDashboard_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pboxprofile)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -109,7 +142,8 @@ namespace SAA_AD_2021
         private System.Windows.Forms.Button btnBooking;
         private System.Windows.Forms.Button btnstorage;
         private System.Windows.Forms.Button btnContactus;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnpurchase;
+        private System.Windows.Forms.PictureBox pboxprofile;
+        private System.Windows.Forms.Button Btnlogout;
     }
 }

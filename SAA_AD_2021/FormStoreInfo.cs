@@ -23,5 +23,10 @@ namespace SAA_AD_2021
             FormDashboard dash = new FormDashboard();
             dash.ShowDialog();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

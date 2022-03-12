@@ -47,17 +47,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Formadmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formadmin.Designer.cs">
+      <DependentUpon>Formadmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormadminDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormadminDashboard.Designer.cs">
+      <DependentUpon>FormadminDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formadminstatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formadminstatus.Designer.cs">
+      <DependentUpon>Formadminstatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formadmintfhistoy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formadmintfhistoy.Designer.cs">
+      <DependentUpon>Formadmintfhistoy.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormBooking.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormBooking.Designer.cs">
       <DependentUpon>FormBooking.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormBuy.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormBuy.Designer.cs">
-      <DependentUpon>FormBuy.cs</DependentUpon>
     </Compile>
     <Compile Include="Formchekout.cs">
       <SubType>Form</SubType>
@@ -70,6 +88,12 @@
     </Compile>
     <Compile Include="FormContactus.Designer.cs">
       <DependentUpon>FormContactus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formdeleteuser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formdeleteuser.Designer.cs">
+      <DependentUpon>Formdeleteuser.cs</DependentUpon>
     </Compile>
     <Compile Include="FormLogin.cs">
       <SubType>Form</SubType>
@@ -101,6 +125,24 @@
     <Compile Include="Formpembelian.Designer.cs">
       <DependentUpon>Formpembelian.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormProfile.Designer.cs">
+      <DependentUpon>FormProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPurchaseHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPurchaseHistory.Designer.cs">
+      <DependentUpon>FormPurchaseHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPurchasestatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPurchasestatus.Designer.cs">
+      <DependentUpon>FormPurchasestatus.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormRegister.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -113,6 +155,18 @@
     <Compile Include="FormStoreInfo.Designer.cs">
       <DependentUpon>FormStoreInfo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formunit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formunit.Designer.cs">
+      <DependentUpon>Formunit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formunitedit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formunitedit.Designer.cs">
+      <DependentUpon>Formunitedit.cs</DependentUpon>
+    </Compile>
     <Compile Include="MyDBConnection.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -122,11 +176,20 @@
     <Compile Include="Purchase.Designer.cs">
       <DependentUpon>Purchase.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Formadmin.resx">
+      <DependentUpon>Formadmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormadminDashboard.resx">
+      <DependentUpon>FormadminDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formadminstatus.resx">
+      <DependentUpon>Formadminstatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formadmintfhistoy.resx">
+      <DependentUpon>Formadmintfhistoy.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormBooking.resx">
       <DependentUpon>FormBooking.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormBuy.resx">
-      <DependentUpon>FormBuy.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formchekout.resx">
       <DependentUpon>Formchekout.cs</DependentUpon>
@@ -136,6 +199,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormDashboard.resx">
       <DependentUpon>FormDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formdeleteuser.resx">
+      <DependentUpon>Formdeleteuser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormInvoice.resx">
       <DependentUpon>FormInvoice.cs</DependentUpon>
@@ -149,11 +215,26 @@
     <EmbeddedResource Include="Formpembelian.resx">
       <DependentUpon>Formpembelian.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormProfile.resx">
+      <DependentUpon>FormProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPurchaseHistory.resx">
+      <DependentUpon>FormPurchaseHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPurchasestatus.resx">
+      <DependentUpon>FormPurchasestatus.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormRegister.resx">
       <DependentUpon>FormRegister.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormStoreInfo.resx">
       <DependentUpon>FormStoreInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formunit.resx">
+      <DependentUpon>Formunit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formunitedit.resx">
+      <DependentUpon>Formunitedit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -183,6 +264,66 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Screenshot 2021-05-29 221353.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pink and Purple Sporty Gradient Fitness YouTube Thumbnail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pink and Purple Sporty Gradient Fitness YouTube Thumbnail %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pink and Purple Sporty Gradient Fitness YouTube Thumbnail %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pink and Purple Sporty Gradient Fitness YouTube Thumbnail %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\depositphotos_39258143-stock-illustration-businessman-avatar-profile-picture.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\app 2aaa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dashboard admin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pink and Purple Sporty Gradient Fitness YouTube Thumbnail %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bookingform2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pink and Purple Sporty Gradient Fitness YouTube Thumbnail %285%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\storage unit.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checkout2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\update profile2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Paymentfinish %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\updateprofil.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\purchase history %282%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

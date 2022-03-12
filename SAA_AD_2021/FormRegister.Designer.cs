@@ -47,14 +47,14 @@ namespace SAA_AD_2021
             // 
             // tboxusername
             // 
-            this.tboxusername.Location = new System.Drawing.Point(322, 121);
+            this.tboxusername.Location = new System.Drawing.Point(524, 218);
             this.tboxusername.Name = "tboxusername";
             this.tboxusername.Size = new System.Drawing.Size(217, 26);
             this.tboxusername.TabIndex = 8;
             // 
             // tboxfullname
             // 
-            this.tboxfullname.Location = new System.Drawing.Point(322, 37);
+            this.tboxfullname.Location = new System.Drawing.Point(524, 149);
             this.tboxfullname.Name = "tboxfullname";
             this.tboxfullname.Size = new System.Drawing.Size(217, 26);
             this.tboxfullname.TabIndex = 7;
@@ -62,7 +62,7 @@ namespace SAA_AD_2021
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(318, 85);
+            this.label1.Location = new System.Drawing.Point(520, 195);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(83, 20);
             this.label1.TabIndex = 6;
@@ -71,7 +71,7 @@ namespace SAA_AD_2021
             // labelEmail
             // 
             this.labelEmail.AutoSize = true;
-            this.labelEmail.Location = new System.Drawing.Point(318, 13);
+            this.labelEmail.Location = new System.Drawing.Point(520, 126);
             this.labelEmail.Name = "labelEmail";
             this.labelEmail.Size = new System.Drawing.Size(80, 20);
             this.labelEmail.TabIndex = 5;
@@ -79,14 +79,14 @@ namespace SAA_AD_2021
             // 
             // tboxphoneno
             // 
-            this.tboxphoneno.Location = new System.Drawing.Point(322, 278);
+            this.tboxphoneno.Location = new System.Drawing.Point(524, 357);
             this.tboxphoneno.Name = "tboxphoneno";
             this.tboxphoneno.Size = new System.Drawing.Size(217, 26);
             this.tboxphoneno.TabIndex = 12;
             // 
             // tboxemail
             // 
-            this.tboxemail.Location = new System.Drawing.Point(322, 194);
+            this.tboxemail.Location = new System.Drawing.Point(524, 285);
             this.tboxemail.Name = "tboxemail";
             this.tboxemail.Size = new System.Drawing.Size(217, 26);
             this.tboxemail.TabIndex = 11;
@@ -94,7 +94,7 @@ namespace SAA_AD_2021
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(318, 242);
+            this.label2.Location = new System.Drawing.Point(520, 334);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(115, 20);
             this.label2.TabIndex = 10;
@@ -103,7 +103,7 @@ namespace SAA_AD_2021
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(318, 170);
+            this.label3.Location = new System.Drawing.Point(520, 262);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(46, 20);
             this.label3.TabIndex = 9;
@@ -111,7 +111,7 @@ namespace SAA_AD_2021
             // 
             // tboxconfirm
             // 
-            this.tboxconfirm.Location = new System.Drawing.Point(322, 431);
+            this.tboxconfirm.Location = new System.Drawing.Point(524, 502);
             this.tboxconfirm.Name = "tboxconfirm";
             this.tboxconfirm.Size = new System.Drawing.Size(217, 26);
             this.tboxconfirm.TabIndex = 16;
@@ -119,7 +119,7 @@ namespace SAA_AD_2021
             // 
             // tboxpassword
             // 
-            this.tboxpassword.Location = new System.Drawing.Point(322, 347);
+            this.tboxpassword.Location = new System.Drawing.Point(524, 431);
             this.tboxpassword.Name = "tboxpassword";
             this.tboxpassword.Size = new System.Drawing.Size(217, 26);
             this.tboxpassword.TabIndex = 15;
@@ -128,7 +128,7 @@ namespace SAA_AD_2021
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(318, 395);
+            this.label4.Location = new System.Drawing.Point(520, 482);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(137, 20);
             this.label4.TabIndex = 14;
@@ -137,7 +137,7 @@ namespace SAA_AD_2021
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(318, 323);
+            this.label5.Location = new System.Drawing.Point(520, 408);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(78, 20);
             this.label5.TabIndex = 13;
@@ -145,7 +145,9 @@ namespace SAA_AD_2021
             // 
             // btnback
             // 
-            this.btnback.Location = new System.Drawing.Point(322, 479);
+            this.btnback.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnback.Font = new System.Drawing.Font("Adobe Gothic Std B", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnback.Location = new System.Drawing.Point(97, 524);
             this.btnback.Name = "btnback";
             this.btnback.Size = new System.Drawing.Size(90, 32);
             this.btnback.TabIndex = 17;
@@ -155,7 +157,9 @@ namespace SAA_AD_2021
             // 
             // btnregister
             // 
-            this.btnregister.Location = new System.Drawing.Point(449, 479);
+            this.btnregister.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnregister.Font = new System.Drawing.Font("Adobe Gothic Std B", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnregister.Location = new System.Drawing.Point(802, 524);
             this.btnregister.Name = "btnregister";
             this.btnregister.Size = new System.Drawing.Size(90, 32);
             this.btnregister.TabIndex = 18;
@@ -167,6 +171,8 @@ namespace SAA_AD_2021
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::SAA_AD_2021.Properties.Resources.updateprofil;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(928, 580);
             this.Controls.Add(this.btnregister);
             this.Controls.Add(this.btnback);
@@ -185,6 +191,7 @@ namespace SAA_AD_2021
             this.Name = "FormRegister";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormRegister";
+            this.Load += new System.EventHandler(this.FormRegister_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace SAA_AD_2021
 {
@@ -16,11 +17,15 @@ namespace SAA_AD_2021
         {
             InitializeComponent();
         }
-
+        MySqlConnection sqlConnect;
+        MySqlCommand sqlCommand;
+        MySqlDataAdapter sqlAdapter;
+        string sqlQuery;
+        string connectString = "server=139.255.11.84; uid=student; pwd=isbmantap; database=KMMI4;";
         private void btnBooking_Click(object sender, EventArgs e)
         {
             this.Hide();
-            FormBooking booking = new FormBooking();
+            Formpembelian booking = new Formpembelian();
             booking.ShowDialog();
         }
 
@@ -41,8 +46,31 @@ namespace SAA_AD_2021
         private void btnpurchase_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Formpurchase purchase = new Formpurchase();
+            FormPurchaseHistory purchase = new FormPurchaseHistory();
             purchase.ShowDialog();
+        }
+
+        private void FormDashboard_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void Btnlogout_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Are You Sure to Logout Your Account?", "Notification", MessageBoxButtons.YesNo);
+            if (result == DialogResult.Yes)
+            {
+                this.Hide();
+                FormLogin d = new FormLogin();
+                d.ShowDialog();
+            }
+        }
+
+        private void pboxprofile_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormProfile d = new FormProfile();
+            d.ShowDialog();
         }
     }
 }

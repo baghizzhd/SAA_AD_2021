@@ -21,89 +21,97 @@ namespace SAA_AD_2021
         MySqlCommand sqlCommand;
         MySqlDataAdapter sqlAdapter;
         string sqlQuery;
-        string connectString = "server=localhost;uid=root;pwd=;database=kuyrental;";
- 
+        string connectString = "server=139.255.11.84; uid=student; pwd=isbmantap; database=KMMI4;";
+
         private void btnregister_Click(object sender, EventArgs e)
 
         {
-            string auto = "";
-         
-            sqlConnect = new MySqlConnection(connectString);
-            
-            
-            sqlQuery = "select * from pengguna";
-            DataTable dtnamapengguna = new DataTable();
-            sqlConnect = new MySqlConnection(connectString);
-            sqlCommand = new MySqlCommand(sqlQuery, sqlConnect);
-            sqlAdapter = new MySqlDataAdapter(sqlCommand);
-            sqlAdapter.Fill(dtnamapengguna);
-            int jumlahpengguna = dtnamapengguna.Rows.Count + 1;
-            if (jumlahpengguna >= 10)
+
+            if (tboxfullname.Text == "")
             {
-                auto += jumlahpengguna.ToString();
-            }
-            else if (jumlahpengguna >= 100)
-            {
-                auto += "00";
-                auto += jumlahpengguna.ToString();
-            }
-            else if (jumlahpengguna >= 1000)
-            {
-                auto += "0";
-                auto += jumlahpengguna.ToString();
-            }
-            else if (jumlahpengguna >= 10000)
-            {
-                auto += jumlahpengguna.ToString();
+                MessageBox.Show("Please Fill The Fullname First", "Error!");
             }
             else
             {
-                auto += "0000";
-                auto += jumlahpengguna.ToString();
-            }
+                string auto = "";
 
+                sqlConnect = new MySqlConnection(connectString);
 
-            sqlQuery = "insert into pengguna values ('"+auto+"','"+tboxfullname.Text+"','"+tboxusername.Text+"','"+tboxemail.Text+"','"+tboxphoneno.Text.ToString()+"','"+tboxpassword.Text.ToString()+"',0)";
-            sqlCommand = new MySqlCommand(sqlQuery, sqlConnect);
+                auto += tboxfullname.Text.Substring(0, 1).ToUpper();
 
-            if (tboxconfirm.Text == "" || tboxemail.Text == "" || tboxfullname.Text == "" || tboxpassword.Text == "" || tboxphoneno.Text == "" || tboxusername.Text == "")
-            {
-                MessageBox.Show("some Textbox are not filled!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
-            }
-
-            if (tboxpassword.Text == tboxconfirm.Text)
-            {
-                if (tboxpassword.Text != "" || tboxusername.Text != "")
+                sqlQuery = "select * from pengguna where user_fullname like'" + auto + "%'";
+                DataTable dtnamapengguna = new DataTable();
+                sqlConnect = new MySqlConnection(connectString);
+                sqlCommand = new MySqlCommand(sqlQuery, sqlConnect);
+                sqlAdapter = new MySqlDataAdapter(sqlCommand);
+                sqlAdapter.Fill(dtnamapengguna);
+                int jumlahpengguna = dtnamapengguna.Rows.Count + 1;
+                if (jumlahpengguna >= 10)
                 {
-                    sqlConnect.Open();
-                    sqlCommand.ExecuteNonQuery();
-                    sqlConnect.Close();
-                    MessageBox.Show("Account Created!", "Succed", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    this.Hide();
-                    FormLogin signup = new FormLogin();
-                    signup.ShowDialog();
+                    auto += "00";
+                    auto += jumlahpengguna.ToString();
                 }
-                else if (checkusername() && checkemail())
+                else if (jumlahpengguna >= 100)
                 {
-                    MessageBox.Show("This gmail & Username are already exist, use another Email & Username!", "Duplicate Email", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    auto += "0";
+                    auto += jumlahpengguna.ToString();
                 }
-                else if (checkemail())
+                else if (jumlahpengguna >= 1000)
                 {
-                    MessageBox.Show("This Email is already exist, use another Email!", "Duplicate Email", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                    auto += jumlahpengguna.ToString();
                 }
-                else if (checkusername())
+                else
                 {
-                    MessageBox.Show("This Username is already exist, use another username!", "Duplicate Username", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    auto += "000";
+                    auto += jumlahpengguna.ToString();
                 }
+
+
+
+
+                if (tboxconfirm.Text == "" || tboxemail.Text == "" || tboxfullname.Text == "" || tboxpassword.Text == "" || tboxphoneno.Text == "" || tboxusername.Text == "")
+                {
+                    MessageBox.Show("some Textbox are not filled!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                }
+
+                else if (tboxpassword.Text == tboxconfirm.Text)
+                {
+
+                    if (checkusername() && checkemail())
+                    {
+                        MessageBox.Show("This gmail & Username are already exist, use another Email & Username!", "Duplicate Email", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    else if (checkemail())
+                    {
+                        MessageBox.Show("This Email is already exist, use another Email!", "Duplicate Email", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    else if (checkusername())
+                    {
+                        MessageBox.Show("This Username is already exist, use another username!", "Duplicate Username", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    else if (tboxpassword.Text != "" || tboxusername.Text != "" || checkusername() || checkemail())
+                    {
+                        sqlQuery = "insert into pengguna values ('" + auto + "','" + tboxfullname.Text + "','" + tboxusername.Text + "','" + tboxemail.Text + "','" + tboxphoneno.Text.ToString() + "','" + tboxpassword.Text.ToString() + "',0)";
+                        sqlCommand = new MySqlCommand(sqlQuery, sqlConnect);
+                        sqlConnect.Open();
+                        sqlCommand.ExecuteNonQuery();
+                        sqlConnect.Close();
+                        MessageBox.Show("Account Created!", "Succed", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        this.Hide();
+                        FormLogin signup = new FormLogin();
+                        signup.ShowDialog();
+                    }
+
+                }
+
+                else
+                {
+                    MessageBox.Show("Password are Not Right!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+
             }
-
-            else
-            {
-                MessageBox.Show("Password are Not Right!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
-            }
-
-
 
         }
         public Boolean checkusername()
@@ -160,6 +168,11 @@ namespace SAA_AD_2021
             this.Hide();
             FormLogin dash = new FormLogin();
             dash.ShowDialog();
+        }
+
+        private void FormRegister_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
